@@ -56,7 +56,7 @@ nav.main-nav {
     &.school {
       @include link-colors(0, 149, 226);
     }
-    &.home, &.sale-data {
+    &.home, &.sale-data, &.klass-manage, &.order-manage, &.sale-manage, &.product-info, &.seller-manage {
       @include link-colors(16, 16, 16);
     }
   }

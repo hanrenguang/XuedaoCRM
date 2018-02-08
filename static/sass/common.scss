@@ -26,9 +26,14 @@ a {
   padding: 0;
   margin: 0;
 }
+*[class*="col-sm"] {
+  padding: 0;
+  margin: 0;
+}
+
 
 /* is-sale-status-class */
-span.sale {
+span.sale, span.show-his, span.show-prob {
   background-color: #0095e2;
   &:after {
     position: absolute;
@@ -41,7 +46,7 @@ span.sale {
     content: "";
   }
 }
-span.not-sale {
+span.not-sale, span.hide-his, span.hide-prob {
   background-color: #ddd;
   &:after {
     position: absolute;

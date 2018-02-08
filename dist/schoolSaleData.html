@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>学道CRM管理端</title>
+  <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/schoolSaleData.css">
+</head>
+<body>
+  <header class="clearfix">
+    <a href="index.html" class="title pull-left">学道CRM管理端</a>
+    <div class="manager-box pull-right">
+      <a href="#" class="manager">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 韩仁光
+      </a>
+      <a href="javascript:;" class="sign-out">退出登录</a>
+    </div>
+  </header>
+
+  <div class="container clearfix">
+    <nav class="main-nav">
+      <a href="index.html" class="home">
+        <span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页
+      </a>
+      <span class="split-line"></span>
+      <a href="#" class="school">
+        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> 华中科技大学
+      </a>
+      <a href="#" class="klass-manage">
+        <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> 班级管理
+      </a>
+      <a href="#" class="order-manage">
+        <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 订单管理
+      </a>
+      <a href="#" class="sale-manage">
+        <span class="glyphicon glyphicon-signal" aria-hidden="true"></span> 销售管理
+      </a>
+      <a href="#" class="product-info">
+        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 商品信息
+      </a>
+      <a href="#" class="seller-manage">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 销售员
+      </a>
+      <a href="#" class="sale-data">
+        <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> 销售数据
+      </a>
+    </nav>
+
+    <div class="main-data-box">
+      <div class="statistics row">
+        <div class="title col-md-12">数据统计</div>
+        <div class="col-md-2 order-total">
+          <p class="order-total-number">186923</p>
+          <p class="item-name">订单总额</p>
+        </div>
+        <div class="col-md-2 order-free-total">
+          <p class="order-free-total-number">9865</p>
+          <p class="item-name">免单额 2.7%</p>
+        </div>
+        <div class="col-md-2 should-pay-back">
+          <p class="should-pay-back-number">176598</p>
+          <p class="item-name">应回款</p>
+        </div>
+        <div class="col-md-2 has-paid-back">
+          <p class="has-paid-back-number">176598</p>
+          <p class="item-name">已回款</p>
+        </div>
+        <div class="col-md-2 total-salary">
+          <p class="total-salary-number">26582</p>
+          <p class="item-name">总工资</p>
+        </div>
+        <div class="col-md-2 has-paid">
+          <p class="has-paid-number">9865</p>
+          <p class="item-name">已发工资</p>
+        </div>
+      </div>
+
+      <div class="trading-volume-trend">
+        <div class="title">日交易额走势</div>
+        <div class="charts"></div>
+      </div>
+      
+      <div class="day-data-box clearfix">
+        <p class="title">每日数据</p>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <th>日期</th>
+              <th>订单数</th>
+              <th>交易额</th>
+              <th>累计交易额</th>
+            </tr>
+            <tr>
+              <td>2017.07.07</td>
+              <td>66</td>
+              <td>6625</td>
+              <td>66552</td>
+            </tr>
+            <tr>
+              <td>2017.07.07</td>
+              <td>66</td>
+              <td>6625</td>
+              <td>66552</td>
+            </tr>
+            <tr>
+              <td>2017.07.07</td>
+              <td>66</td>
+              <td>6625</td>
+              <td>66552</td>
+            </tr>
+            <tr>
+              <td>2017.07.07</td>
+              <td>66</td>
+              <td>6625</td>
+              <td>66552</td>
+            </tr>
+            <tr>
+              <td>2017.07.07</td>
+              <td>66</td>
+              <td>6625</td>
+              <td>66552</td>
+            </tr>
+            <tr>
+              <td>2017.07.07</td>
+              <td>66</td>
+              <td>6625</td>
+              <td>66552</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="paginator-box">
+          <div class="total-item-box">
+            Total <span class="total-item">100</span> items
+          </div>
+          <ul class="pagination"></ul>
+          <div class="current-page">
+            1/50
+          </div>
+          <div class="goto-page">
+            Goto <input type="text" class="goto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./vendor/jquery-3.3.1.min.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./vendor/jqpaginator.min.js"></script>
+  <script src="./vendor/echarts.simple.min.js"></script>
+  <script src="./js/schoolSaleData.js"></script>
+</body>
+</html>

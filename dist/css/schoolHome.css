@@ -73,11 +73,11 @@ nav.main-nav a.school:hover, nav.main-nav a.school:visited, nav.main-nav a.schoo
   color: rgba(0, 149, 226, 0.8);
 }
 
-nav.main-nav a.home, nav.main-nav a.sale-data {
+nav.main-nav a.home, nav.main-nav a.sale-data, nav.main-nav a.klass-manage, nav.main-nav a.order-manage, nav.main-nav a.sale-manage, nav.main-nav a.product-info, nav.main-nav a.seller-manage {
   color: #101010;
 }
 
-nav.main-nav a.home:hover, nav.main-nav a.home:visited, nav.main-nav a.home:active, nav.main-nav a.sale-data:hover, nav.main-nav a.sale-data:visited, nav.main-nav a.sale-data:active {
+nav.main-nav a.home:hover, nav.main-nav a.home:visited, nav.main-nav a.home:active, nav.main-nav a.sale-data:hover, nav.main-nav a.sale-data:visited, nav.main-nav a.sale-data:active, nav.main-nav a.klass-manage:hover, nav.main-nav a.klass-manage:visited, nav.main-nav a.klass-manage:active, nav.main-nav a.order-manage:hover, nav.main-nav a.order-manage:visited, nav.main-nav a.order-manage:active, nav.main-nav a.sale-manage:hover, nav.main-nav a.sale-manage:visited, nav.main-nav a.sale-manage:active, nav.main-nav a.product-info:hover, nav.main-nav a.product-info:visited, nav.main-nav a.product-info:active, nav.main-nav a.seller-manage:hover, nav.main-nav a.seller-manage:visited, nav.main-nav a.seller-manage:active {
   color: rgba(16, 16, 16, 0.8);
 }
 

@@ -1,0 +1,2 @@
+
+//# sourceMappingURL=klassDetail.js.map
