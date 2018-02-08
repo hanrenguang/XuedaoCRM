@@ -1,0 +1,172 @@
+@mixin link-colors($r, $g, $b) {
+  color: rgb($r, $g, $b);
+  &:hover, &:visited, &:active{
+    color: rgba($r, $g, $b, 0.8);
+  }
+}
+/* header */
+header {
+  width: 100%;
+  height: 64px;
+  background-color: #fff;
+  a.title {
+    line-height: 64px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 31px;
+    @include link-colors(0, 149, 226);
+  }
+  div.manager-box {
+    margin-right: 21px;
+    line-height: 64px;
+    font-size: 16px;
+    a {
+      @include link-colors(85, 85, 85);
+    }
+    a.manager {
+      padding: 5px 10px;
+      border-right: 2px solid #bbb;
+    }
+    a.sign-out {
+      padding: 5px 10px;
+    }
+  }
+}
+
+/* container */
+div.container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* nav */
+nav.main-nav {
+  float: left;
+  width: 12%;
+  padding-top: 15px;
+  a {
+    display: block;
+    line-height: 55px;
+    padding-left: 18%;
+    font-size: 16px;
+    span {
+      margin-right: 8px;
+    }
+    &.school-manage {
+      @include link-colors(0, 149, 226);
+    }
+    &.home, &.sale-data {
+      @include link-colors(16, 16, 16);
+    }
+  }
+}
+
+/* main-data */
+div.main-data-box {
+  float: left;
+  width: 82%;
+  margin: 40px 0px 100px 40px;
+  padding: 15px;
+  background-color: #fff;
+  div.select-box {
+    width: 100%;
+    margin-bottom: 20px;
+    div.select-city, div.select-level, div.sort-strategy, div.is-sale-box, div.create-school-box {
+      float: left;
+      line-height: 40px;
+      font-size: 16px;
+      text-align: center;
+    }
+    div.select-city, div.select-level, div.sort-strategy, div.is-sale-box {
+      width: 22.5%;
+    }
+    div.create-school-box {
+      width: 10%;
+    }
+    select {
+      display: inline-block;
+      width: 50%;
+      margin-left: 5px;
+      padding: 6px;
+    }
+    span.is-sale {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 21px;
+      vertical-align: middle;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    button.create-school {
+      color: #0095e2;
+      border-color: #0095e2;
+      background-color: #fff;
+      outline: none;
+      &:hover, &:active, &:visited {
+        background-color: #fff;
+      }
+    }
+  }
+  div.school-data-box {
+    table tr.item {
+      cursor: pointer;
+      td:nth-child(14) {
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          border: 1px solid #1aaba8;
+          border-radius: 50%;
+          color: #1aaba8;
+        }
+      }
+      td:nth-child(15) {
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          border: 1px solid #e51c23;
+          border-radius: 50%;
+          color: #e51c23;
+        }
+      }
+    }
+    table tr.total {
+      font-size: 16px;
+    }
+    table th, table td {
+      border-width: 0px;
+      line-height: 35px;
+      text-align: center;
+      a {
+        @include link-colors(18, 150, 219);
+      }
+    }
+  }
+  div.paginator-box {
+    float: right;
+    div.total-item-box, ul.pagination, div.current-page, div.goto-page {
+      display: inline-block;
+      line-height: 40px;
+      vertical-align: middle;
+    }
+    div.total-item-box, div.current-page, div.goto-page {
+      font-size: 12px;
+      margin: 0px 5px;
+    }
+    input.goto {
+      width: 40px;
+      height: 25px;
+      text-align: center;
+    }
+    ul.pagination {
+      margin: 0;
+    }
+  }
+}

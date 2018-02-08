@@ -1,0 +1,208 @@
+/* header */
+header {
+  width: 100%;
+  height: 64px;
+  background-color: #fff;
+}
+
+header a.title {
+  line-height: 64px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 31px;
+  color: #0095e2;
+}
+
+header a.title:hover, header a.title:visited, header a.title:active {
+  color: rgba(0, 149, 226, 0.8);
+}
+
+header div.manager-box {
+  margin-right: 21px;
+  line-height: 64px;
+  font-size: 16px;
+}
+
+header div.manager-box a {
+  color: #555555;
+}
+
+header div.manager-box a:hover, header div.manager-box a:visited, header div.manager-box a:active {
+  color: rgba(85, 85, 85, 0.8);
+}
+
+header div.manager-box a.manager {
+  padding: 5px 10px;
+  border-right: 2px solid #bbb;
+}
+
+header div.manager-box a.sign-out {
+  padding: 5px 10px;
+}
+
+/* container */
+div.container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* nav */
+nav.main-nav {
+  float: left;
+  width: 12%;
+  padding-top: 15px;
+}
+
+nav.main-nav a {
+  display: block;
+  line-height: 55px;
+  padding-left: 18%;
+  font-size: 16px;
+}
+
+nav.main-nav a span {
+  margin-right: 8px;
+}
+
+nav.main-nav a.school-manage {
+  color: #0095e2;
+}
+
+nav.main-nav a.school-manage:hover, nav.main-nav a.school-manage:visited, nav.main-nav a.school-manage:active {
+  color: rgba(0, 149, 226, 0.8);
+}
+
+nav.main-nav a.home, nav.main-nav a.sale-data {
+  color: #101010;
+}
+
+nav.main-nav a.home:hover, nav.main-nav a.home:visited, nav.main-nav a.home:active, nav.main-nav a.sale-data:hover, nav.main-nav a.sale-data:visited, nav.main-nav a.sale-data:active {
+  color: rgba(16, 16, 16, 0.8);
+}
+
+/* main-data */
+div.main-data-box {
+  float: left;
+  width: 82%;
+  margin: 40px 0px 100px 40px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+div.main-data-box div.select-box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+div.main-data-box div.select-box div.select-city, div.main-data-box div.select-box div.select-level, div.main-data-box div.select-box div.sort-strategy, div.main-data-box div.select-box div.is-sale-box, div.main-data-box div.select-box div.create-school-box {
+  float: left;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+}
+
+div.main-data-box div.select-box div.select-city, div.main-data-box div.select-box div.select-level, div.main-data-box div.select-box div.sort-strategy, div.main-data-box div.select-box div.is-sale-box {
+  width: 22.5%;
+}
+
+div.main-data-box div.select-box div.create-school-box {
+  width: 10%;
+}
+
+div.main-data-box div.select-box select {
+  display: inline-block;
+  width: 50%;
+  margin-left: 5px;
+  padding: 6px;
+}
+
+div.main-data-box div.select-box span.is-sale {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 21px;
+  vertical-align: middle;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+div.main-data-box div.select-box button.create-school {
+  color: #0095e2;
+  border-color: #0095e2;
+  background-color: #fff;
+  outline: none;
+}
+
+div.main-data-box div.select-box button.create-school:hover, div.main-data-box div.select-box button.create-school:active, div.main-data-box div.select-box button.create-school:visited {
+  background-color: #fff;
+}
+
+div.main-data-box div.school-data-box table tr.item {
+  cursor: pointer;
+}
+
+div.main-data-box div.school-data-box table tr.item td:nth-child(14) span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #1aaba8;
+  border-radius: 50%;
+  color: #1aaba8;
+}
+
+div.main-data-box div.school-data-box table tr.item td:nth-child(15) span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #e51c23;
+  border-radius: 50%;
+  color: #e51c23;
+}
+
+div.main-data-box div.school-data-box table tr.total {
+  font-size: 16px;
+}
+
+div.main-data-box div.school-data-box table th, div.main-data-box div.school-data-box table td {
+  border-width: 0px;
+  line-height: 35px;
+  text-align: center;
+}
+
+div.main-data-box div.school-data-box table th a, div.main-data-box div.school-data-box table td a {
+  color: #1296db;
+}
+
+div.main-data-box div.school-data-box table th a:hover, div.main-data-box div.school-data-box table th a:visited, div.main-data-box div.school-data-box table th a:active, div.main-data-box div.school-data-box table td a:hover, div.main-data-box div.school-data-box table td a:visited, div.main-data-box div.school-data-box table td a:active {
+  color: rgba(18, 150, 219, 0.8);
+}
+
+div.main-data-box div.paginator-box {
+  float: right;
+}
+
+div.main-data-box div.paginator-box div.total-item-box, div.main-data-box div.paginator-box ul.pagination, div.main-data-box div.paginator-box div.current-page, div.main-data-box div.paginator-box div.goto-page {
+  display: inline-block;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+div.main-data-box div.paginator-box div.total-item-box, div.main-data-box div.paginator-box div.current-page, div.main-data-box div.paginator-box div.goto-page {
+  font-size: 12px;
+  margin: 0px 5px;
+}
+
+div.main-data-box div.paginator-box input.goto {
+  width: 40px;
+  height: 25px;
+  text-align: center;
+}
+
+div.main-data-box div.paginator-box ul.pagination {
+  margin: 0;
+}

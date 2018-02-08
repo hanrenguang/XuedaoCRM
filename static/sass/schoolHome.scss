@@ -1,0 +1,276 @@
+@mixin link-colors($r, $g, $b) {
+  color: rgb($r, $g, $b);
+  &:hover, &:visited, &:active{
+    color: rgba($r, $g, $b, 0.8);
+  }
+}
+/* header */
+header {
+  width: 100%;
+  height: 64px;
+  background-color: #fff;
+  a.title {
+    line-height: 64px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 31px;
+    @include link-colors(0, 149, 226);
+  }
+  div.manager-box {
+    margin-right: 21px;
+    line-height: 64px;
+    font-size: 16px;
+    a {
+      @include link-colors(85, 85, 85);
+    }
+    a.manager {
+      padding: 5px 10px;
+      border-right: 2px solid #bbb;
+    }
+    a.sign-out {
+      padding: 5px 10px;
+    }
+  }
+}
+
+/* container */
+div.container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* nav */
+nav.main-nav {
+  float: left;
+  width: 13.5%;
+  padding-top: 15px;
+  a {
+    display: block;
+    line-height: 55px;
+    padding-left: 18%;
+    font-size: 16px;
+    span {
+      margin-right: 8px;
+    }
+    &.school {
+      @include link-colors(0, 149, 226);
+    }
+    &.home, &.sale-data {
+      @include link-colors(16, 16, 16);
+    }
+  }
+  span.split-line {
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+/* main-data */
+div.main-data-box {
+  float: left;
+  width: 78%;
+  margin: 40px 0px 100px 40px;
+  div.key-indicators {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    div.title {
+      line-height: 50px;
+      padding-left: 15px;
+      color: #101010;
+      background-color: #eee;
+      font-size: 17px;
+      div.wrapper {
+        float: right;
+        margin-right: 20px;
+        span.begin-sale {
+          position: relative;
+          display: inline-block;
+          width: 40px;
+          height: 21px;
+          vertical-align: middle;
+          border-radius: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+    div.order, div.transaction, div.total-transaction {
+      padding-top: 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+    div.order, div.transaction {
+      padding-bottom: 30px;
+      border-right: 1px solid #ddd;
+    }
+    div.order {
+      p.order-item {
+        line-height: 40px;
+        font-size: 18px;
+        span {
+          display: inline-block;
+          vertical-align: text-top;
+          font-size: 22px;
+          color: #1aabaa;
+        }
+      }
+      p.order-data {
+        line-height: 60px;
+        font-size: 45px;
+        color: #1aabaa;
+      }
+      p.order-increase {
+        line-height: 20px;
+        font-size: 14px;
+        span.glyphicon {
+          color: #bbb;
+        }
+      }
+    }
+    div.transaction {
+      p.transaction-item {
+        line-height: 40px;
+        font-size: 18px;
+        span {
+          display: inline-block;
+          vertical-align: text-top;
+          font-size: 22px;
+          color: #e3818b;
+        }
+      }
+      p.transaction-data {
+        line-height: 60px;
+        font-size: 45px;
+        color: #e3818b;
+      }
+      p.transaction-increase {
+        line-height: 20px;
+        font-size: 14px;
+        span.glyphicon {
+          color: #bbb;
+        }
+      }
+    }
+    div.total-transaction {
+      p.total-transaction-item {
+        line-height: 40px;
+        font-size: 18px;
+        span {
+          display: inline-block;
+          vertical-align: text-top;
+          font-size: 22px;
+          color: #4a8599;
+        }
+      }
+      p.total-transaction-data {
+        line-height: 60px;
+        font-size: 45px;
+        color: #4a8599;
+      }
+      p.total-transaction-perc {
+        line-height: 20px;
+        font-size: 18px;
+      }
+      p.aim-transaction {
+        font-size: 14px;
+      }
+    }
+  }
+  div.pending {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    div.title {
+      line-height: 50px;
+      padding-left: 15px;
+      color: #101010;
+      background-color: #eee;
+      font-size: 17px;
+    }
+    div.order-detail {
+      float: left;
+      width: 70%;
+      padding: 30px 0px;
+      text-align: center;
+      div.pending-order, div.pending-delivery-order, div.pending-confirm-order {
+        padding: 5px 0px;
+      }
+      div.pending-confirm-order {
+        border-right: 1px solid #ccc;
+      }
+      p.pending-order-number {
+        line-height: 50px;
+        font-size: 45px;
+        color: #0095e2;
+      }
+      p.pending-delivery-order-number {
+        line-height: 50px;
+        font-size: 45px;
+        color: #4a8599;
+      }
+      p.pending-confirm-order-number {
+        line-height: 50px;
+        font-size: 45px;
+        color: #4a8599;
+      }
+      p.item-name {
+        line-height: 40px;
+        font-size: 16px;
+        color: #a6a6a6;
+      }
+    }
+    div.problem-class {
+      float: right;
+      width: 30%;
+      padding: 35px 0px;
+      text-align: center;
+      p.problem-class-number {
+        line-height: 50px;
+        font-size: 45px;
+        color: #f00;
+      }
+      p.item-name {
+        line-height: 40px;
+        font-size: 16px;
+        color: #a6a6a6;
+      }
+    }
+  }
+  div.global-overview {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    div.title {
+      line-height: 50px;
+      padding-left: 15px;
+      color: #101010;
+      background-color: #eee;
+      font-size: 17px;
+    }
+    div.global-detail {
+      padding: 30px 0px;
+      div.col-md-3 {
+        text-align: center;
+      }
+      p[class*="number"] {
+        line-height: 50px;
+        font-size: 40px;
+        color: #616161;
+      }
+      p.item-name {
+        line-height: 40px;
+        font-size: 16px;
+        color: #a6a6a6;
+      }
+      p.user-number {
+        word-wrap: break-word;
+      }
+    }
+  }
+}

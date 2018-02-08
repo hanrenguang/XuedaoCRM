@@ -1,0 +1,184 @@
+@mixin link-colors($r, $g, $b) {
+  color: rgb($r, $g, $b);
+  &:hover, &:visited, &:active{
+    color: rgba($r, $g, $b, 0.8);
+  }
+}
+/* header */
+header {
+  width: 100%;
+  height: 64px;
+  background-color: #fff;
+  a.title {
+    line-height: 64px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 31px;
+    @include link-colors(0, 149, 226);
+  }
+  div.manager-box {
+    margin-right: 21px;
+    line-height: 64px;
+    font-size: 16px;
+    a {
+      @include link-colors(85, 85, 85);
+    }
+    a.manager {
+      padding: 5px 10px;
+      border-right: 2px solid #bbb;
+    }
+    a.sign-out {
+      padding: 5px 10px;
+    }
+  }
+}
+
+/* container */
+div.container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* nav */
+nav.main-nav {
+  float: left;
+  width: 12%;
+  padding-top: 15px;
+  a {
+    display: block;
+    line-height: 55px;
+    padding-left: 18%;
+    font-size: 16px;
+    span {
+      margin-right: 8px;
+    }
+    &.sale-data {
+      @include link-colors(0, 149, 226);
+    }
+    &.home, &.school-manage {
+      @include link-colors(16, 16, 16);
+    }
+  }
+}
+
+/* main-data */
+div.main-data-box {
+  float: left;
+  width: 80%;
+  margin: 40px 0px 100px 40px;
+  div.statistics {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    div.title {
+      line-height: 50px;
+      padding-left: 15px;
+      margin-bottom: 40px;
+      color: #101010;
+      background-color: #eee;
+      font-size: 17px;
+    }
+    div.col-md-2 {
+      text-align: center;
+    }
+    div.total-salary {
+      border-left: 1px solid #ddd;
+    }
+    p.item-name {
+      line-height: 40px;
+      font-size: 16px;
+      color: #a6a6a6;
+    }
+    p.order-total-number {
+      line-height: 50px;
+      font-size: 30px;
+      color: #0095e2;
+    }
+    p.order-free-total-number {
+      line-height: 50px;
+      font-size: 30px;
+      color: #4a8599;
+    }
+    p.should-pay-back-number {
+      line-height: 50px;
+      font-size: 30px;
+      color: #e51c23;
+    }
+    p.has-paid-back-number {
+      line-height: 50px;
+      font-size: 30px;
+      color: #1aaba8;
+    }
+    p.total-salary-number {
+      line-height: 50px;
+      font-size: 30px;
+      color: #e51c23;
+    }
+    p.has-paid-number {
+      line-height: 50px;
+      font-size: 30px;
+      color: #4a8599;
+    }
+  }
+  div.trading-volume-trend {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    div.title {
+      line-height: 50px;
+      padding-left: 15px;
+      color: #101010;
+      background-color: #eee;
+      font-size: 17px;
+    }
+    div.charts {
+      width: 100%;
+      height: 300px;
+      background-color: #fff;
+    }
+  }
+  div.day-data-box {
+    padding: 20px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    p.title {
+      line-height: 22px;
+      margin: 15px 0px;
+      padding-left: 10px;
+      border-left: 4px solid #616161;
+      font-size: 18px;
+      color: #616161;
+    }
+    table th, table td {
+      border-width: 0px;
+      line-height: 35px;
+      text-align: center;
+    }
+    div.paginator-box {
+      float: right;
+      margin-top: 10px;
+      div.total-item-box, ul.pagination, div.current-page, div.goto-page {
+        display: inline-block;
+        line-height: 40px;
+        vertical-align: middle;
+      }
+      div.total-item-box, div.current-page, div.goto-page {
+        font-size: 12px;
+        margin: 0px 5px;
+      }
+      input.goto {
+        width: 40px;
+        height: 25px;
+        text-align: center;
+      }
+      ul.pagination {
+        margin: 0;
+      }
+    }
+  }
+
+}

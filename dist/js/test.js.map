@@ -1,1 +1,0 @@
-{"version":3,"sources":["test.js"],"names":["test","x","alert"],"mappings":";;AAAA,IAAMA,OAAO,SAAPA,IAAO;AAAA,SAAKC,IAAIA,CAAT;AAAA,CAAb;AACAD;AACAE,MAAM,GAAN","file":"test.js","sourcesContent":["const test = x => x * x\r\ntest()\r\nalert(456)"]}

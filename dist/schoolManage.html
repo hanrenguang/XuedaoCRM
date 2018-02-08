@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>学道CRM管理端</title>
+  <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/schoolManage.css">
+</head>
+<body>
+  <header class="clearfix">
+    <a href="index.html" class="title pull-left">学道CRM管理端</a>
+    <div class="manager-box pull-right">
+      <a href="#" class="manager">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 韩仁光
+      </a>
+      <a href="javascript:;" class="sign-out">退出登录</a>
+    </div>
+  </header>
+
+  <div class="container clearfix">
+    <nav class="main-nav">
+      <a href="index.html" class="home">
+        <span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页
+      </a>
+      <a href="javascript:;" class="school-manage">
+        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> 学校管理
+      </a>
+      <a href="saleData.html" class="sale-data">
+        <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> 销售数据
+      </a>
+    </nav>
+
+    <div class="main-data-box">
+      <div class="select-box clearfix">
+        <div class="select-city">
+          城市 
+          <select class="form-control">
+            <option>武汉</option>
+            <option>成都</option>
+            <option>北京</option>
+            <option>上海</option>
+            <option>广州</option>
+          </select>
+        </div>
+        <div class="select-level">
+          评级 
+          <select class="form-control">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+          </select>
+        </div>
+        <div class="sort-strategy">
+          排序策略 
+          <select class="form-control">
+            <option>每届人数</option>
+            <option>重点人数</option>
+            <option>目标值</option>
+            <option>交易额</option>
+          </select>
+        </div>
+        <div class="is-sale-box">
+          仅显示开售 
+          <span class="is-sale not-sale"></span>
+        </div>
+        <div class="create-school-box">
+          <button class="btn btn-default create-school" type="button">新建学校</button>
+        </div>
+      </div>
+
+      <div class="school-data-box">
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <th>序号</th>
+              <th>名称</th>
+              <th>城市</th>
+              <th>评级</th>
+              <th>R</th>
+              <th>m</th>
+              <th>n</th>
+              <th>学院数</th>
+              <th>每届人数</th>
+              <th>重点学院</th>
+              <th>重点人数</th>
+              <th>目标值</th>
+              <th>交易额</th>
+              <th>新订单</th>
+              <th>问题班</th>
+            </tr>
+            <tr class="item">
+              <td>1</td>
+              <td><a href="#javascript:;">华中科技大学</a></td>
+              <td>武汉</td>
+              <td>A</td>
+              <td>0.9</td>
+              <td>2</td>
+              <td>2</td>
+              <td>25</td>
+              <td>6565</td>
+              <td>2</td>
+              <td>25</td>
+              <td>6565</td>
+              <td>6565</td>
+              <td><span>66</span></td>
+              <td><span>2</span></td>
+            </tr>
+            <tr class="item">
+              <td>2</td>
+              <td><a href="#javascript:;">武汉大学</a></td>
+              <td>武汉</td>
+              <td>A</td>
+              <td>0.9</td>
+              <td>2</td>
+              <td>2</td>
+              <td>25</td>
+              <td>6565</td>
+              <td>2</td>
+              <td>25</td>
+              <td>/</td>
+              <td>/</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="total">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>合 计</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>2255</td>
+              <td>656565</td>
+              <td>200</td>
+              <td>2413</td>
+              <td>2341243</td>
+              <td>2358498</td>
+              <td>344</td>
+              <td>123</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="paginator-box">
+        <div class="total-item-box">
+          Total <span class="total-item">100</span> items
+        </div>
+        <ul class="pagination"></ul>
+        <div class="current-page">
+          1/50
+        </div>
+        <div class="goto-page">
+          Goto <input type="text" class="goto">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./vendor/jquery-3.3.1.min.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./vendor/jqpaginator.min.js"></script>
+  <script src="./js/schoolManage.js"></script>
+</body>
+</html>

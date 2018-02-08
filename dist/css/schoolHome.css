@@ -1,0 +1,330 @@
+/* header */
+header {
+  width: 100%;
+  height: 64px;
+  background-color: #fff;
+}
+
+header a.title {
+  line-height: 64px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 31px;
+  color: #0095e2;
+}
+
+header a.title:hover, header a.title:visited, header a.title:active {
+  color: rgba(0, 149, 226, 0.8);
+}
+
+header div.manager-box {
+  margin-right: 21px;
+  line-height: 64px;
+  font-size: 16px;
+}
+
+header div.manager-box a {
+  color: #555555;
+}
+
+header div.manager-box a:hover, header div.manager-box a:visited, header div.manager-box a:active {
+  color: rgba(85, 85, 85, 0.8);
+}
+
+header div.manager-box a.manager {
+  padding: 5px 10px;
+  border-right: 2px solid #bbb;
+}
+
+header div.manager-box a.sign-out {
+  padding: 5px 10px;
+}
+
+/* container */
+div.container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* nav */
+nav.main-nav {
+  float: left;
+  width: 13.5%;
+  padding-top: 15px;
+}
+
+nav.main-nav a {
+  display: block;
+  line-height: 55px;
+  padding-left: 18%;
+  font-size: 16px;
+}
+
+nav.main-nav a span {
+  margin-right: 8px;
+}
+
+nav.main-nav a.school {
+  color: #0095e2;
+}
+
+nav.main-nav a.school:hover, nav.main-nav a.school:visited, nav.main-nav a.school:active {
+  color: rgba(0, 149, 226, 0.8);
+}
+
+nav.main-nav a.home, nav.main-nav a.sale-data {
+  color: #101010;
+}
+
+nav.main-nav a.home:hover, nav.main-nav a.home:visited, nav.main-nav a.home:active, nav.main-nav a.sale-data:hover, nav.main-nav a.sale-data:visited, nav.main-nav a.sale-data:active {
+  color: rgba(16, 16, 16, 0.8);
+}
+
+nav.main-nav span.split-line {
+  display: block;
+  width: 70%;
+  margin: 10px auto;
+  border-bottom: 1px solid #ddd;
+}
+
+/* main-data */
+div.main-data-box {
+  float: left;
+  width: 78%;
+  margin: 40px 0px 100px 40px;
+}
+
+div.main-data-box div.key-indicators {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+div.main-data-box div.key-indicators div.title {
+  line-height: 50px;
+  padding-left: 15px;
+  color: #101010;
+  background-color: #eee;
+  font-size: 17px;
+}
+
+div.main-data-box div.key-indicators div.title div.wrapper {
+  float: right;
+  margin-right: 20px;
+}
+
+div.main-data-box div.key-indicators div.title div.wrapper span.begin-sale {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 21px;
+  vertical-align: middle;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+div.main-data-box div.key-indicators div.order, div.main-data-box div.key-indicators div.transaction, div.main-data-box div.key-indicators div.total-transaction {
+  padding-top: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+div.main-data-box div.key-indicators div.order, div.main-data-box div.key-indicators div.transaction {
+  padding-bottom: 30px;
+  border-right: 1px solid #ddd;
+}
+
+div.main-data-box div.key-indicators div.order p.order-item {
+  line-height: 40px;
+  font-size: 18px;
+}
+
+div.main-data-box div.key-indicators div.order p.order-item span {
+  display: inline-block;
+  vertical-align: text-top;
+  font-size: 22px;
+  color: #1aabaa;
+}
+
+div.main-data-box div.key-indicators div.order p.order-data {
+  line-height: 60px;
+  font-size: 45px;
+  color: #1aabaa;
+}
+
+div.main-data-box div.key-indicators div.order p.order-increase {
+  line-height: 20px;
+  font-size: 14px;
+}
+
+div.main-data-box div.key-indicators div.order p.order-increase span.glyphicon {
+  color: #bbb;
+}
+
+div.main-data-box div.key-indicators div.transaction p.transaction-item {
+  line-height: 40px;
+  font-size: 18px;
+}
+
+div.main-data-box div.key-indicators div.transaction p.transaction-item span {
+  display: inline-block;
+  vertical-align: text-top;
+  font-size: 22px;
+  color: #e3818b;
+}
+
+div.main-data-box div.key-indicators div.transaction p.transaction-data {
+  line-height: 60px;
+  font-size: 45px;
+  color: #e3818b;
+}
+
+div.main-data-box div.key-indicators div.transaction p.transaction-increase {
+  line-height: 20px;
+  font-size: 14px;
+}
+
+div.main-data-box div.key-indicators div.transaction p.transaction-increase span.glyphicon {
+  color: #bbb;
+}
+
+div.main-data-box div.key-indicators div.total-transaction p.total-transaction-item {
+  line-height: 40px;
+  font-size: 18px;
+}
+
+div.main-data-box div.key-indicators div.total-transaction p.total-transaction-item span {
+  display: inline-block;
+  vertical-align: text-top;
+  font-size: 22px;
+  color: #4a8599;
+}
+
+div.main-data-box div.key-indicators div.total-transaction p.total-transaction-data {
+  line-height: 60px;
+  font-size: 45px;
+  color: #4a8599;
+}
+
+div.main-data-box div.key-indicators div.total-transaction p.total-transaction-perc {
+  line-height: 20px;
+  font-size: 18px;
+}
+
+div.main-data-box div.key-indicators div.total-transaction p.aim-transaction {
+  font-size: 14px;
+}
+
+div.main-data-box div.pending {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+div.main-data-box div.pending div.title {
+  line-height: 50px;
+  padding-left: 15px;
+  color: #101010;
+  background-color: #eee;
+  font-size: 17px;
+}
+
+div.main-data-box div.pending div.order-detail {
+  float: left;
+  width: 70%;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+div.main-data-box div.pending div.order-detail div.pending-order, div.main-data-box div.pending div.order-detail div.pending-delivery-order, div.main-data-box div.pending div.order-detail div.pending-confirm-order {
+  padding: 5px 0px;
+}
+
+div.main-data-box div.pending div.order-detail div.pending-confirm-order {
+  border-right: 1px solid #ccc;
+}
+
+div.main-data-box div.pending div.order-detail p.pending-order-number {
+  line-height: 50px;
+  font-size: 45px;
+  color: #0095e2;
+}
+
+div.main-data-box div.pending div.order-detail p.pending-delivery-order-number {
+  line-height: 50px;
+  font-size: 45px;
+  color: #4a8599;
+}
+
+div.main-data-box div.pending div.order-detail p.pending-confirm-order-number {
+  line-height: 50px;
+  font-size: 45px;
+  color: #4a8599;
+}
+
+div.main-data-box div.pending div.order-detail p.item-name {
+  line-height: 40px;
+  font-size: 16px;
+  color: #a6a6a6;
+}
+
+div.main-data-box div.pending div.problem-class {
+  float: right;
+  width: 30%;
+  padding: 35px 0px;
+  text-align: center;
+}
+
+div.main-data-box div.pending div.problem-class p.problem-class-number {
+  line-height: 50px;
+  font-size: 45px;
+  color: #f00;
+}
+
+div.main-data-box div.pending div.problem-class p.item-name {
+  line-height: 40px;
+  font-size: 16px;
+  color: #a6a6a6;
+}
+
+div.main-data-box div.global-overview {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+div.main-data-box div.global-overview div.title {
+  line-height: 50px;
+  padding-left: 15px;
+  color: #101010;
+  background-color: #eee;
+  font-size: 17px;
+}
+
+div.main-data-box div.global-overview div.global-detail {
+  padding: 30px 0px;
+}
+
+div.main-data-box div.global-overview div.global-detail div.col-md-3 {
+  text-align: center;
+}
+
+div.main-data-box div.global-overview div.global-detail p[class*="number"] {
+  line-height: 50px;
+  font-size: 40px;
+  color: #616161;
+}
+
+div.main-data-box div.global-overview div.global-detail p.item-name {
+  line-height: 40px;
+  font-size: 16px;
+  color: #a6a6a6;
+}
+
+div.main-data-box div.global-overview div.global-detail p.user-number {
+  word-wrap: break-word;
+}

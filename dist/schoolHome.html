@@ -5,11 +5,11 @@
   <title>学道CRM管理端</title>
   <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/schoolHome.css">
 </head>
 <body>
   <header class="clearfix">
-    <a href="#" class="title pull-left">学道CRM管理端</a>
+    <a href="index.html" class="title pull-left">学道CRM管理端</a>
     <div class="manager-box pull-right">
       <a href="#" class="manager">
         <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 韩仁光
@@ -20,20 +20,42 @@
 
   <div class="container clearfix">
     <nav class="main-nav">
-      <a href="javascript:;" class="home">
+      <a href="index.html" class="home">
         <span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页
       </a>
-      <a href="schoolManage.html" class="school-manage">
-        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> 学校管理
+      <span class="split-line"></span>
+      <a href="#" class="school">
+        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> 华中科技大学
       </a>
-      <a href="saleData.html" class="sale-data">
+      <a href="#" class="klass-manage">
+        <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> 班级管理
+      </a>
+      <a href="#" class="order-manage">
+        <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 订单管理
+      </a>
+      <a href="#" class="sale-manage">
+        <span class="glyphicon glyphicon-signal" aria-hidden="true"></span> 销售管理
+      </a>
+      <a href="#" class="product-info">
+        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 商品信息
+      </a>
+      <a href="#" class="seller-manage">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 销售员
+      </a>
+      <a href="#" class="sale-data">
         <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> 销售数据
       </a>
     </nav>
 
     <div class="main-data-box">
       <div class="key-indicators row">
-        <div class="title col-md-12">关键指标</div>
+        <div class="title col-md-12 clearfix">
+          关键指标
+          <div class="wrapper">
+            开始销售
+            <span class="begin-sale sale"></span>
+          </div>
+        </div>
         <div class="order col-md-4">
           <p class="order-item">
             <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 今日订单
@@ -83,29 +105,21 @@
         </div>
       </div>
       <div class="global-overview clearfix">
-        <div class="title">全局概览</div>
+        <div class="title">全校概览</div>
         <div class="global-detail row">
-          <div class="school-box col-md-2">
-            <p class="school-number">100</p>
-            <p class="item-name">学校总数</p>
-          </div>
-          <div class="sale-school col-md-2">
-            <p class="sale-school-number">64</p>
-            <p class="item-name">开售学校</p>
-          </div>
-          <div class="college col-md-2">
+          <div class="college col-md-3">
             <p class="college-number">265</p>
             <p class="item-name">学院数</p>
           </div>
-          <div class="klass col-md-2">
+          <div class="klass col-md-3">
             <p class="klass-number">2685</p>
             <p class="item-name">班级数</p>
           </div>
-          <div class="user col-md-2">
+          <div class="user col-md-3">
             <p class="user-number">1660685</p>
             <p class="item-name">用户数</p>
           </div>
-          <div class="seller col-md-2">
+          <div class="seller-manage-box col-md-3">
             <p class="seller-number">208</p>
             <p class="item-name">销售员</p>
           </div>
@@ -116,6 +130,6 @@
 
   <script src="./vendor/jquery-3.3.1.min.js"></script>
   <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="./js/index.js"></script>
+  <script src="./js/schoolHome.js"></script>
 </body>
 </html>
