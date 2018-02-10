@@ -5,7 +5,7 @@
   <title>学道CRM管理端</title>
   <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/klassManage.css">
+  <link rel="stylesheet" href="./css/productInfo.css">
 </head>
 <body>
   <header class="clearfix">
@@ -48,75 +48,58 @@
     </nav>
 
     <div class="main-data-box">
-      <span class="menu-box clearfix">
-        <a href="javascript:;" class="return-college">
-          <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-          <span>返回</span>
-        </a>
-        <button class="subject-setting" type="button">适用科目设置及统计</button>
-        <div class="show-problem-box">
-          仅显示问题 <span class="show-problem hide-prob"></span>
-        </div>
-      </span>
-      <div class="klass-detail-box clearfix">
+      <div class="product-title clearfix">
+        <span class="title">商品信息</span>
+        <span class="product-operating-box">
+          <button class="new-product" type="button">新增商品</button>
+          <button class="export-excel" type="button">导出表格</button>
+        </span>
+      </div>
+      <div class="product-detail-box clearfix">
         <table class="table table-striped">
           <tbody>
             <tr>
-              <th>班级名称</th>
-              <th>状态</th>
-              <th>联系人</th>
-              <th>销售额</th>
-              <th>订单记录</th>
-              <th>拜访记录</th>
-              <th>地址</th>
+              <th>编号</th>
+              <th>名称</th>
+              <th>页数</th>
+              <th>价格</th>
+              <th>下单量</th>
+              <th>交易额</th>
+              <th>备注</th>
             </tr>
             <tr>
-              <td>电子1201</td>
-              <td class="contact">初步联系</td>
               <td>1</td>
+              <td>马原</td>
               <td>60</td>
-              <td>6</td>
-              <td>6</td>
-              <td>韵苑11栋</td>
+              <td>6.8</td>
+              <td>6523</td>
+              <td>45023</td>
+              <td>光电学院/机械学院/电信学院</td>
             </tr>
             <tr>
-              <td>电子1201</td>
-              <td class="statistics">正在统计</td>
-              <td>1</td>
-              <td>60</td>
-              <td>6</td>
-              <td>6</td>
-              <td>韵苑11栋</td>
+              <td>2</td>
+              <td>概率论与数理统计</td>
+              <td>58</td>
+              <td>5.4</td>
+              <td>6523</td>
+              <td>16928</td>
+              <td>机械学院/电信学院</td>
             </tr>
             <tr>
-              <td>电子1201</td>
-              <td class="ordered">已下单</td>
-              <td>1</td>
-              <td>60</td>
-              <td>6</td>
-              <td>6</td>
-              <td>韵苑11栋</td>
-            </tr>
-            <tr>
-              <td>电子1201</td>
-              <td class="problem">出现问题</td>
-              <td>1</td>
-              <td>60</td>
-              <td>6</td>
-              <td>6</td>
-              <td>韵苑11栋</td>
-            </tr>
-            <tr>
-              <td>电子1201</td>
-              <td class="difficult">疑难客户</td>
-              <td>1</td>
-              <td>60</td>
-              <td>6</td>
-              <td>6</td>
-              <td>韵苑11栋</td>
+              <td>3</td>
+              <td>大学物理</td>
+              <td>72</td>
+              <td>8.8</td>
+              <td>6523</td>
+              <td>28613</td>
+              <td>光电学院</td>
             </tr>
           </tbody>
         </table>
+        <div class="history">
+          历史数据 
+          <span class="show-history hide-his"></span>
+        </div>
         <div class="paginator-box">
           <div class="total-item-box">
             Total <span class="total-item">100</span> items
@@ -136,6 +119,6 @@
   <script src="./vendor/jquery-3.3.1.min.js"></script>
   <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="./vendor/jqpaginator.min.js"></script>
-  <script src="./js/klassManage.js"></script>
+  <script src="./js/productInfo.js"></script>
 </body>
 </html>

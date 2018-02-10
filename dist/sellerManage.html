@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>学道CRM管理端</title>
+  <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/sellerManage.css">
+</head>
+<body>
+  <header class="clearfix">
+    <a href="index.html" class="title pull-left">学道CRM管理端</a>
+    <div class="manager-box pull-right">
+      <a href="#" class="manager">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 韩仁光
+      </a>
+      <a href="javascript:;" class="sign-out">退出登录</a>
+    </div>
+  </header>
+
+  <div class="container clearfix">
+    <nav class="main-nav">
+      <a href="index.html" class="home">
+        <span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页
+      </a>
+      <span class="split-line"></span>
+      <a href="#" class="school">
+        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> 华中科技大学
+      </a>
+      <a href="#" class="klass-manage">
+        <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> 班级管理
+      </a>
+      <a href="#" class="order-manage">
+        <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 订单管理
+      </a>
+      <a href="#" class="sale-manage">
+        <span class="glyphicon glyphicon-signal" aria-hidden="true"></span> 销售管理
+      </a>
+      <a href="#" class="product-info">
+        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 商品信息
+      </a>
+      <a href="#" class="seller-manage">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 销售员
+      </a>
+      <a href="#" class="sale-data">
+        <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> 销售数据
+      </a>
+    </nav>
+
+    <div class="main-data-box">
+      <div class="seller-title clearfix">
+        <span class="title">人员信息</span>
+        <span class="seller-operating-box">
+          <button class="new-seller" type="button">新增人员</button>
+          <button class="export-excel" type="button">导出表格</button>
+        </span>
+      </div>
+      <div class="seller-detail-box clearfix">
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <th>编号</th>
+              <th>姓名</th>
+              <th>手机号</th>
+              <th>关联学院</th>
+              <th>目标额</th>
+              <th>交易额</th>
+              <th>收入</th>
+              <th>已发工资</th>
+              <th>操作</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>刘伟</td>
+              <td>13163635252</td>
+              <td>光电学院/机械学院/电信学院</td>
+              <td>36598</td>
+              <td>45023</td>
+              <td>6523</td>
+              <td>4000</td>
+              <td>
+                <a href="javascript:;" class="edit-repayment">填回款</a>
+                <a href="javascript:;" class="pay-off">发工资</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>刘伟</td>
+              <td>13163635252</td>
+              <td>光电学院/机械学院/电信学院</td>
+              <td>36598</td>
+              <td>15231</td>
+              <td>6523</td>
+              <td>0</td>
+              <td>
+                <a href="javascript:;" class="edit-repayment">填回款</a>
+                <a href="javascript:;" class="pay-off pay-off-disable">发工资</a>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>刘伟</td>
+              <td>13163635252</td>
+              <td>光电学院/机械学院/电信学院</td>
+              <td>36598</td>
+              <td>35976</td>
+              <td>6523</td>
+              <td>0</td>
+              <td>
+                <a href="javascript:;" class="edit-repayment">填回款</a>
+                <a href="javascript:;" class="pay-off pay-off-disable">发工资</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="paginator-box">
+          <div class="total-item-box">
+            Total <span class="total-item">100</span> items
+          </div>
+          <ul class="pagination"></ul>
+          <div class="current-page">
+            1/50
+          </div>
+          <div class="goto-page">
+            Goto <input type="text" class="goto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./vendor/jquery-3.3.1.min.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./vendor/jqpaginator.min.js"></script>
+  <script src="./js/sellerManage.js"></script>
+</body>
+</html>

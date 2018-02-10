@@ -1,0 +1,130 @@
+@mixin link-colors($r, $g, $b) {
+  color: rgb($r, $g, $b);
+  &:hover, &:visited, &:active{
+    color: rgba($r, $g, $b, 0.8);
+  }
+}
+/* header */
+header {
+  width: 100%;
+  height: 64px;
+  background-color: #fff;
+  a.title {
+    line-height: 64px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 31px;
+    @include link-colors(0, 149, 226);
+  }
+  div.manager-box {
+    margin-right: 21px;
+    line-height: 64px;
+    font-size: 16px;
+    a {
+      @include link-colors(85, 85, 85);
+    }
+    a.manager {
+      padding: 5px 10px;
+      border-right: 2px solid #bbb;
+    }
+    a.sign-out {
+      padding: 5px 10px;
+    }
+  }
+}
+
+/* container */
+div.container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* nav */
+nav.main-nav {
+  float: left;
+  width: 13.5%;
+  padding-top: 15px;
+  a {
+    display: block;
+    line-height: 55px;
+    padding-left: 18%;
+    font-size: 16px;
+    span {
+      margin-right: 8px;
+    }
+    &.sale-manage {
+      @include link-colors(0, 149, 226);
+    }
+    &.school {
+      @include link-colors(229, 28, 35);
+    }
+    &.home, &.sale-data, &.klass-manage, &.order-manage, &.product-info, &.seller-manage {
+      @include link-colors(16, 16, 16);
+    }
+  }
+  span.split-line {
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+/* main-data */
+div.main-data-box {
+  float: left;
+  width: 78%;
+  margin: 40px 0px 100px 40px;
+  background-color: #fff;
+  div.sale-detail-box {
+    padding: 20px 30px 30px 15px;
+    table {
+      th, td {
+        border-width: 0px;
+        line-height: 30px;
+        text-align: center;
+      }
+      tr td:last-child {
+        font-size: 12px;
+      }
+    }
+    div.history {
+      float: left;
+      line-height: 40px;
+      margin-top: 10px;
+      color: #b2b1b3;
+      font-size: 16px;
+      span.show-history {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 21px;
+        vertical-align: middle;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+    }
+    div.paginator-box {
+      float: right;
+      margin-top: 10px;
+      div.total-item-box, ul.pagination, div.current-page, div.goto-page {
+        display: inline-block;
+        line-height: 40px;
+        vertical-align: middle;
+      }
+      div.total-item-box, div.current-page, div.goto-page {
+        font-size: 12px;
+        margin: 0px 5px;
+      }
+      input.goto {
+        width: 40px;
+        height: 25px;
+        text-align: center;
+      }
+      ul.pagination {
+        margin: 0;
+      }
+    }
+  }
+}

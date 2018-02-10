@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>学道CRM管理端</title>
+  <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/classManage.css">
+</head>
+<body>
+  <header class="clearfix">
+    <a href="index.html" class="title pull-left">学道CRM管理端</a>
+    <div class="manager-box pull-right">
+      <a href="#" class="manager">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 韩仁光
+      </a>
+      <a href="javascript:;" class="sign-out">退出登录</a>
+    </div>
+  </header>
+
+  <div class="container clearfix">
+    <nav class="main-nav">
+      <a href="index.html" class="home">
+        <span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页
+      </a>
+      <span class="split-line"></span>
+      <a href="#" class="school">
+        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> 华中科技大学
+      </a>
+      <a href="#" class="klass-manage">
+        <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> 班级管理
+      </a>
+      <a href="#" class="order-manage">
+        <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 订单管理
+      </a>
+      <a href="#" class="sale-manage">
+        <span class="glyphicon glyphicon-signal" aria-hidden="true"></span> 销售管理
+      </a>
+      <a href="#" class="product-info">
+        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 商品信息
+      </a>
+      <a href="#" class="seller-manage">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 销售员
+      </a>
+      <a href="#" class="sale-data">
+        <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> 销售数据
+      </a>
+    </nav>
+
+    <div class="main-data-box">
+      <span class="menu-box clearfix">
+        <a href="javascript:;" class="return-college">
+          <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+          <span>返回</span>
+        </a>
+        <button class="subject-setting" type="button">适用科目设置及统计</button>
+        <div class="show-problem-box">
+          仅显示问题 <span class="show-problem hide-prob"></span>
+        </div>
+      </span>
+      <div class="klass-detail-box clearfix">
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <th>班级名称</th>
+              <th>状态</th>
+              <th>联系人</th>
+              <th>销售额</th>
+              <th>订单记录</th>
+              <th>拜访记录</th>
+              <th>地址</th>
+            </tr>
+            <tr>
+              <td>电子1201</td>
+              <td class="contact">初步联系</td>
+              <td>1</td>
+              <td>60</td>
+              <td>6</td>
+              <td>6</td>
+              <td>韵苑11栋</td>
+            </tr>
+            <tr>
+              <td>电子1201</td>
+              <td class="statistics">正在统计</td>
+              <td>1</td>
+              <td>60</td>
+              <td>6</td>
+              <td>6</td>
+              <td>韵苑11栋</td>
+            </tr>
+            <tr>
+              <td>电子1201</td>
+              <td class="ordered">已下单</td>
+              <td>1</td>
+              <td>60</td>
+              <td>6</td>
+              <td>6</td>
+              <td>韵苑11栋</td>
+            </tr>
+            <tr>
+              <td>电子1201</td>
+              <td class="problem">出现问题</td>
+              <td>1</td>
+              <td>60</td>
+              <td>6</td>
+              <td>6</td>
+              <td>韵苑11栋</td>
+            </tr>
+            <tr>
+              <td>电子1201</td>
+              <td class="difficult">疑难客户</td>
+              <td>1</td>
+              <td>60</td>
+              <td>6</td>
+              <td>6</td>
+              <td>韵苑11栋</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="paginator-box">
+          <div class="total-item-box">
+            Total <span class="total-item">100</span> items
+          </div>
+          <ul class="pagination"></ul>
+          <div class="current-page">
+            1/50
+          </div>
+          <div class="goto-page">
+            Goto <input type="text" class="goto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./vendor/jquery-3.3.1.min.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./vendor/jqpaginator.min.js"></script>
+  <script src="./js/classManage.js"></script>
+</body>
+</html>
